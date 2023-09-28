@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 public static class QueryMethods
 {
-    
     public static T First<T>(this IEnumerable<T> items)
     {
         int i = 0; 
@@ -36,8 +35,6 @@ public static class QueryMethods
                 yield return item;
         }
     }
-
-
     public static IEnumerable<TOut>  SelectMethod<T, TOut>(this IEnumerable<T> items,
                     Func<T, TOut> filter)
     {

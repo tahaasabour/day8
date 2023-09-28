@@ -27,10 +27,10 @@
         LINQ
            Features 
              1- Collection Initialzers  (DONE)
-             2- Extensions Methods 
+             2- Extensions Methods   (DONE)
              3- Lambda Expression     (DONE)
-             4- Anonymous Data Types
-             5- Implicilty Typed Local Variables 
+             4- Anonymous Data Types (DONE)
+             5- Implicilty Typed Local Variables  (DONE)
              6- Query Syntax 
            Patterns (interafces)
              1- IEnumerable (DONE)

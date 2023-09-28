@@ -1,25 +1,28 @@
 ﻿
-
+using System;
+using System.Collections.Generic;
 public class QueryMethods
 {
-    public static T First<T>(T[] items)
+    public static T First<T>(IEnumerable<T> items)
     {
-        return items[0];
+        int i = 0; 
+        foreach(T item in items)
+        {
+            if(i == 0)
+                return item;
+        }
+        return default;
     }
     public static T Last<T>(T[] items)
     {
         return items[items.Length - 1];
     }
-    public static T[] WhereMethod<T>(T[] items, Func<T, bool> filter)
+    public static IEnumerable<T> WhereMethod<T>(IEnumerable<T> items, Func<T, bool> filter)
     {
-        T[] arr = new T[items.Length];
-        int count = 0;
-        for (int i = 0; i < items.Length; i++)
+        foreach(T item in items)
         {
-            if (filter(items[i]))
-                arr[count++] = items[i];
+            if(filter(item))
+                yield return item;
         }
-        Array.Resize(ref arr, count);
-        return arr;
     }
 }

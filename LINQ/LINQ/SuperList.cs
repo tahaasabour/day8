@@ -2,6 +2,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class SuperList<T> : IEnumerable<T>
 {
@@ -21,7 +22,10 @@ public class SuperList<T> : IEnumerable<T>
     public IEnumerator<T> GetEnumerator()
     {
         foreach (T item in items)
-            yield return item;
+        {
+            if(item != null)
+                 yield return item;
+        }
     }
     IEnumerator IEnumerable.GetEnumerator()
     {

@@ -2,11 +2,14 @@
 
 
 
+using System;
+using System.Collections.Generic;
+
 public class Program
 {
     public static void Main()
     {
-        int[] arr = new int[] { 100, 0, 99, 3, -1, 3 };
+        IEnumerable<int> arr = new int[] { 100, 0, 99, 3, -1, 3 };
         Trainee[] Ts = new Trainee[]
         {
             new Trainee { Id=1, Name="Hany"},
@@ -14,34 +17,22 @@ public class Program
             new Trainee { Id=4, Name="Osaman"},
         };
 
-        Trainee[] result =
+        IEnumerable<Trainee> result =
              QueryMethods.WhereMethod(Ts, t => t.Id > 1);
 
         SuperList<Trainee> sL = new SuperList<Trainee>()
         {
             new Trainee{Id=1, Name="Samaa"},
             new Trainee{Id=3, Name="Ahmed"},
+            new Trainee{Id=100, Name="Mostafa"},
         };
 
-
-        foreach (Trainee trainee in result)
-            Console.WriteLine($"ID:{trainee.Id}, Name: {trainee.Name}");
-
-
-
-        Console.WriteLine($"First Element: {QueryMethods.First<int>(arr)}");
-        Console.WriteLine($"Last Element: {QueryMethods.Last(arr)}");
-
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-
-
-        int[] evens = QueryMethods.WhereMethod<int>(arr, i => i %2 ==0);
-        
-        foreach(int i in evens)
-            Console.WriteLine(i);
-
+        IEnumerable<Trainee> Ts2 =
+             QueryMethods.WhereMethod(sL, t => t.Id > 3);
+        foreach(Trainee t in Ts2) 
+        {
+            Console.WriteLine($"{t.Id},  {t.Name}");
+        }
 
     }
 }

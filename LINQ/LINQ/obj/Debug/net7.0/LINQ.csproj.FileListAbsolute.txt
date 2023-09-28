@@ -1,0 +1,15 @@
+D:\Demo\LINQ\LINQ\bin\Debug\net7.0\LINQ.exe
+D:\Demo\LINQ\LINQ\bin\Debug\net7.0\LINQ.deps.json
+D:\Demo\LINQ\LINQ\bin\Debug\net7.0\LINQ.runtimeconfig.json
+D:\Demo\LINQ\LINQ\bin\Debug\net7.0\LINQ.dll
+D:\Demo\LINQ\LINQ\bin\Debug\net7.0\LINQ.pdb
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\LINQ.csproj.AssemblyReference.cache
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\LINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\LINQ.AssemblyInfoInputs.cache
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\LINQ.AssemblyInfo.cs
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\LINQ.csproj.CoreCompileInputs.cache
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\LINQ.dll
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\refint\LINQ.dll
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\LINQ.pdb
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\LINQ.genruntimeconfig.cache
+D:\Demo\LINQ\LINQ\obj\Debug\net7.0\ref\LINQ.dll
